@@ -1,0 +1,16 @@
+A directed graph (or digraph) is a set of vertices and a collection
+of directed edges. Each directed edge connects an ordered pair of
+vertices.
+
+Outdegree: the number of edges pointing from it
+Indegree: the number of edges going to it
+
+
+
+
+Topological Sort
+Given a digraph, put the vertices in order
+such that all its directed edges point from a vertex earlier in the order to a vertex later in the order.
+Or report doing so is not possible.
+
+the precedence-constrained scheduling problem
