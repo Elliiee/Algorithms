@@ -5,7 +5,7 @@ vertices.
 Outdegree: the number of edges pointing from it
 Indegree: the number of edges going to it
 
-
+DAG: a directed acyclic graph is a digraph with no directed cycles.
 
 
 Topological Sort

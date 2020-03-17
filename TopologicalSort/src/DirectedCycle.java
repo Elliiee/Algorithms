@@ -9,4 +9,33 @@ public class DirectedCycle {
     public DirectedCycle(Digraph G){
 
     }
+
+    public void dfs(Digraph G, int v){
+        onStack[v] = true;
+        marked[v] = true;
+        for (int w : G.adj(v)){
+            if (this.hasCycle())
+                return;
+            else if (!marked[w]) {
+                edgeTo[w] = v;
+                dfs(G, w);
+            }
+            else if (onStack[w]){
+                cycle = new Stack<>();
+                for (int x = v; x != w; x = edgeTo[x])
+                    cycle.push(x);
+                cycle.push(w);
+                cycle.push(v);
+            }
+            onStack[v] = false;
+        }
+    }
+
+    public boolean hasCycle(){
+        return cycle != null;
+    }
+
+    public Iterable<Integer> cycle(){
+        return cycle;
+    }
 }
