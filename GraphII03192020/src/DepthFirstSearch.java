@@ -19,3 +19,8 @@ public class DepthFirstSearch {
     public boolean marked(int w) { return marked[w]; }
     public int count() { return count; }
 }
+/*
+To answer those questions:
+Are two given vertices connected?
+How many connected components does the graph have?
+ */
