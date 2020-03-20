@@ -1,6 +1,4 @@
-import edu.princeton.cs.algs4.Bag;
-
-import java.awt.*;
+import edu.princeton.cs.algs4.*;
 
 public class Digraph {
     private final int V;
